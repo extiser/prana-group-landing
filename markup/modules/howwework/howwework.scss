@@ -1,0 +1,118 @@
+.howwework {
+	margin-top: 44px;
+
+	background-color: #fbfbfb;
+	&__header {
+		padding-top: 45px;
+		padding-bottom: 44px;
+	}
+	&__item {
+		position: relative;
+
+		width: 550px;
+		height: 300px;
+
+		border: 10px solid #fbfbfb;
+		box-shadow: inset 0 0 30px #ededed;
+		transform: scale(0.7);
+		opacity: 0;
+		transition: all 0.3s;
+		&__numb {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+
+			box-sizing: border-box;
+			width: 36px;
+			height: 36px;
+			padding-top: 4px;
+
+			text-align: center;
+
+			color: #fff;
+			border-radius: 10px;
+
+			font-family: "HelveticaNeueCyrBold";
+			font-size: 24px;
+			&--howFirst {
+				background-color: $blue;
+			}
+			&--howSecond {
+				background-color: $red;
+			}
+			&--howThird {
+				background-color: $yellow;
+			}
+			&--howFourth {
+				background-color: $green;
+			}
+		}
+		&__img {
+			position: absolute;
+			top: 38px;
+			right: 0;
+			left: 0;
+
+			height: 151px;
+			margin: auto;
+			&--howFirst {
+				width: 147px;
+
+				background: url(../images/content/howFirst.png) no-repeat center center;
+			}
+			&--howSecond {
+				width: 148px;
+
+				background: url(../images/content/howSecond.png) no-repeat center center;
+			}
+			&--howThird {
+				width: 153px;
+
+				background: url(../images/content/howThird.png) no-repeat center center;
+			}
+			&--howFourth {
+				width: 106px;
+
+				background: url(../images/content/howFourth.png) no-repeat center center;
+			}
+		}
+		&__link {
+			display: none;
+
+			text-decoration: underline;
+
+			color: #145f93;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		&__text {
+			position: absolute;
+			right: 0;
+			bottom: 15px;
+			left: 0;
+
+			width: 90%;
+			margin: auto;
+
+			text-align: center;
+
+			color: $textGray;
+
+			font-family: "SegoeUILight";
+			font-size: 24px;
+		}
+		&--howSecond {
+			.howwework__item__link {
+				display: block;
+			}
+		}
+	}
+
+	&.fadeIn {
+		.howwework__item {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}

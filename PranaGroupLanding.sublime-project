@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "markup\\modules"
+		},
+		{
+			"path": "markup\\pages"
+		},
+		{
+			"path": "markup\\static\\js\\libraries"
+		},
+		{
+			"path": "markup\\static\\misc"
+		},
+		{
+			"path": "markup\\static\\scss"
+		}
+	]
+}

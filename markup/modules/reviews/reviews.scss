@@ -1,0 +1,124 @@
+.reviews {
+	background: url(../images/general/reviews__bg.jpg) no-repeat center center;
+	position: relative;
+	height: 611px;
+
+	&__header {
+		padding-top: 48px;
+		padding-bottom: 45px;
+	}
+
+	.wrapper {
+		&--reviews-users {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			bottom: 65px;
+			left: 60px;
+			right: 0;
+			margin: auto;
+		}
+	}
+
+	&__item-review {
+		width: 1050px;
+		margin: auto;
+		border: 1px solid #dbdbdb;
+		box-sizing: border-box;
+		padding: 51px 108px;
+		background-color: #fff;
+		visibility: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		visibility: hidden;
+		opacity: 0;
+		top: -40px;
+		transition: all .4s ease-in-out;
+		&.active {
+			visibility: visible;
+			opacity: 1;
+			top: 180px;
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			display: block;
+			@include bg($pic);
+			bottom: -21px;
+		}
+		p {
+			font-family: 'HelveticaNeueCyrLight';
+			font-size: 18px;
+			line-height: 28px;
+			color: #a6a6a6;
+			font-style: italic;
+			display: block;
+			width: 100%;
+			position: relative;
+			&:before, &:after {
+				position: absolute;
+				content: "";
+				display: block;
+			}
+			&:before {
+				@include bg($quote-l);
+				left: -90px;
+				top: -30px;
+			}
+			&:after {
+				@include bg($quote-r);
+				right: -90px;
+			}
+		}
+		&#id0 {
+			&:after {
+				left: 25px;
+			}
+		}
+		&#id1 {
+			&:after {
+				left: 310px;
+			}
+		}
+		&#id2 {
+			&:after {
+				left: 590px;
+			}
+		}
+		&#id3 {
+			&:after {
+				left: 870px;
+			}
+		}
+	}
+
+	&__item-users {
+		width: 275px;
+		margin-right: 10px;
+		opacity: .5;
+		transition: all .4s ease-in-out;
+		img {
+			width: 102px;
+			height: 102px;
+			border-radius: 50%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&__name {
+			width: 155px;
+			display: inline-block;
+			font-family: 'HelveticaNeueCyrLight';
+			font-size: 14px;
+			color: #000;
+			margin-left: 10px;
+			span {
+				display: block;
+			}
+		}
+		&.active {
+			opacity: 1;
+		}
+	}
+}

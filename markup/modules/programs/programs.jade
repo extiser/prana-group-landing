@@ -1,0 +1,18 @@
+mixin programs()
+	section.programs#programs(ng-controller="programsController")
+		header.programs__header
+			.title(class="title {{param.headerColor}}") {{param.headerName}}
+			p {{param.headerText}}
+		.programs__item(ng-repeat="(i, item) in programs")
+			img(ng-src="%=staticPrefix=%images/content/{{item.img}}" alt="{{item.name}}")
+			p.programs__item__name {{item.name}}
+			a(href="#programs" ng-click="modal(item.modalLink)" title="Подробнее о заказе \"{{item.name}}\"").programs__item__link.programs__item__link--more Подробнее о заказе >>>
+			a(href="#{{item.linkPortfolio}}" title="Просмотреть в портфолио" du-smooth-scroll).programs__item__link.programs__item__link--portfolio Посмотреть в портфолио >>>
+
+		#mask
+		#modal.modal(ng-repeat="(i, item) in programs | filter: {modalLink : item}")
+			img(ng-src="%=staticPrefix=%images/content/{{item.img}}" alt="{{item.name}}")
+			span.programs__item__name {{item.name}}
+			p {{item.about}}
+			a(href="#form" title="Заказать" du-smooth-scroll)#modalL Сделать заказ
+

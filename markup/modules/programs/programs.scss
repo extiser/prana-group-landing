@@ -1,0 +1,128 @@
+.programs {
+	display: flex;
+
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__header {
+		width: 100%;
+		p {
+			margin-top: 31px;
+			margin-bottom: 34px;
+
+			text-align: center;
+
+			color: $textGray;
+
+			font-family: "SegoeUILight";
+			font-size: 24px;
+			line-height: 24px;
+		}
+	}
+	&__item {
+		width: 262px;
+		transform-style: preserve-3d;
+		transform: rotateY(-90deg);
+		transition: all 0.7s;
+		opacity: 0;
+		&__name {
+			margin-top: 23px;
+			margin-bottom: 8px;
+
+			color: $textGray;
+
+			font-family: "HelveticaNeueCyrBold";
+			font-size: 24px;
+			line-height: 24px;
+		}
+		&__link {
+			display: block;
+
+			margin-bottom: 11px;
+
+			text-decoration: none;
+
+			color: $textGray;
+
+			font-family: "SegoeUILight";
+			font-size: 14px;
+			line-height: 14px;
+		}
+	}
+
+	&.fadeIn {
+		.programs__item {
+			transform: rotateY(0deg);
+			opacity: 1;
+		}
+	}
+}
+
+#mask {
+	background: #000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 99998;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .4s ease-in-out;
+	&.active {
+		visibility: visible;
+		opacity: .6;
+	}
+}
+
+.modal {
+	position: fixed;
+	top: 40px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 640px;
+	height: 380px;
+	background: #fff;
+	border-radius: 10px;
+	z-index: 99999;
+	padding: 20px;
+
+	perspective: 1300px;
+	transform-style: preserve-3d;
+	transform: translateY(100%) rotateX(90deg);
+	transform-origin: 0 100%;
+	opacity: 0;
+	transition: all 0.3s ease-out;
+
+	&.active {
+		transform: translateY(0%) rotateX(0deg);
+		opacity: 1;
+	}
+
+	img {
+		float: left;
+		margin-right: 25px;
+	}
+
+	p {
+		font-family: 'SegoeUILight';
+		font-size: 16px;
+		line-height: 21px;
+		color: $textGray;
+		margin-top: 10px;
+		margin-bottom: 35px;
+	}
+
+	a {
+		font-family: 'SegoeUILight';
+		font-size: 21px;
+		line-height: 0;
+		color: #fff;
+		background: $green;
+		padding: 8px 15px;
+		border-bottom: 3px solid #9CB211;
+	}
+}

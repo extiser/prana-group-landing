@@ -1,0 +1,14 @@
+mixin slider(data)
+	#slider-wrap.slider-wrap
+		section.slider#slider(ng-controller="sliderController")
+			.slide(ng-repeat="(i, slide) in slides")
+				.slide__content
+					.slide__content-rows
+						.slide__content-rows__row.slide__content-rows__row--f
+							{{slide.contentRowF}}
+						.slide__content-rows__row.slide__content-rows__row--l
+							{{slide.contentRowL}}
+					.slide__content-name
+						{{slide.name}}
+
+				img(ng-src="%=staticPrefix=%images/general/{{slide.image}}")

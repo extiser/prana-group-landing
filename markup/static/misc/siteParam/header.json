@@ -1,0 +1,44 @@
+{
+	"logo" : {
+		"name" : "Prana Group",
+		"href" : "http://pranagroup.ru/"
+	},
+
+	"menu" : [
+		{
+			"name" : "Световые картины",
+			"href" : "#slider",
+			"bemClass" : "blue"
+		},
+		{
+			"name" : "Программы",
+			"href" : "#programs",
+			"bemClass" : "green"
+		},
+		{
+			"name" : "Как мы работаем",
+			"href" : "#howwework",
+			"bemClass" : "red"
+		},
+		{
+			"name" : "Портфолио",
+			"href" : "#portfolio",
+			"bemClass" : "yellow"
+		},
+		{
+			"name" : "Тарифы",
+			"href" : "#tarif",
+			"bemClass" : "blue"
+		},
+		{
+			"name" : "Отзывы",
+			"href" : "#reviews",
+			"bemClass" : "purple"
+		},
+		{
+			"name" : "Заказать",
+			"href" : "#form",
+			"bemClass" : "orange"
+		}
+	]
+}

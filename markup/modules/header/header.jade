@@ -1,0 +1,7 @@
+mixin header(data)
+	header.header#header(ng-controller="headerController")
+		.wrapper.wrapper--header
+			a(href="{{logo.href}}" title="{{logo.name}}").header__logo {{logo.name}}
+			nav.header__menu
+				a(href="{{item.href}}" title="{{item.name}}" ng-repeat="item in menu" class="{{item.bemClass}}" du-smooth-scroll) {{item.name}}
+		#toTop(ng-click="toTheTop()")

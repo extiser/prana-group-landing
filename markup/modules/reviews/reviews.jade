@@ -1,0 +1,17 @@
+mixin reviews()
+	section.reviews#reviews(ng-controller="reviewsController")
+		header.reviews__header
+			.title(class="title {{param.headerColor}}") {{param.headerName}}
+
+		.wrapper--reviews-list
+			.reviews__item-review(ng-repeat="(i, item) in reviews | limitTo:4" data-idreview="{{i}}" id="id{{i}}" ng-class="{ 'active': $first }")
+				p {{item.review}}
+
+		.wrapper.wrapper--reviews-users
+			.reviews__item-users(ng-repeat="(i, item) in reviews | limitTo:4" data-iduser="{{i}}" ng-click="reviewsClick(i)" ng-class="{ 'active': $first }")
+				img(ng-src="%=staticPrefix=%images/content/{{item.avatar}}" alt="{{item.name}}")
+				.reviews__item-users__name {{item.name}}
+					span {{item.status}}
+
+
+

@@ -1,0 +1,37 @@
+.header {
+	position: fixed;
+	z-index: 99997;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	margin: auto;
+	padding-bottom: 9px;
+
+	border-top: 6px solid $gray;
+	background-color: #fff;
+	&__logo {
+		margin-top: 6px;
+
+		text-indent: -9999px;
+
+		@include bg($logo);
+	}
+	&__menu {
+		a {
+			padding: 0 19px;
+			padding-top: 21px;
+
+			transition: all .4s ease-in-out;
+			text-transform: uppercase;
+
+			border-top: 6px solid;
+
+			font-family: "HelveticaNeueCyrBold";
+			font-size: 14px;
+			&:hover {
+				color: $gray;
+			}
+		}
+	}
+}

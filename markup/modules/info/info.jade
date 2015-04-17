@@ -1,0 +1,14 @@
+mixin info()
+	section.info#info(ng-controller="infoController")
+		.wrapper.wrapper--info
+			.info__item(
+				ng-repeat="item in info"
+				class="info__item--{{item.bemModifer}}"
+				ng-class="{animate: hover}"
+				ng-mouseenter="hover = true"
+				ng-mouseleave="hover = false"
+				)
+				.info__item__img(class="info__item__img--{{item.bemModifer}}")
+				.info__item__text(ng-class="hide" class="info__item__text--{{item.bemModifer}}") {{item.text}}
+
+

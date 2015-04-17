@@ -1,0 +1,33 @@
+{
+	"param" : {
+		"headerColor" : "green",
+		"headerName" : "Программы",
+		"headerText" : "Выберите подходящее шоу. Или закажите что-то уникальное - мы удовлеторим самый взыскательный вкус."
+	},
+	"programs" : [
+		{
+			"img" : "programs_love-story.jpg",
+			"name" : "Любовная история",
+			"linkPortfolio" : "love-story",
+			"modalLink" : "ModalLoveStory"
+		},
+		{
+			"img" : "programs_new-year.jpg",
+			"name" : "Новый год",
+			"linkPortfolio" : "new-year",
+			"modalLink" : "ModalNewYear"
+		},
+		{
+			"img" : "programs_views-MoscowSpb.jpg",
+			"name" : "Виды Москвы/СПб",
+			"linkPortfolio" : "views-MoscowSpb",
+			"modalLink" : "ModalViewsMoscowSpb"
+		},
+		{
+			"img" : "programs_individual.jpg",
+			"name" : "Индивидуальный",
+			"linkPortfolio" : "individual",
+			"modalLink" : "ModalIndividual"
+		}
+	]
+}

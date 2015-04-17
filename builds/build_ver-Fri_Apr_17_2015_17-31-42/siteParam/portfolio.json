@@ -1,0 +1,93 @@
+{
+	"param" : {
+		"headerColor" : "yellow",
+		"headerName" : "Портфолио",
+		"headerText" : ""
+	},
+
+	"filter" : [
+		{
+			"name" : "Любовная история",
+			"category" : "love-story"
+		},
+		{
+			"name" : "Новый год",
+			"category" : "new-year"
+		},
+		{
+			"name" : "Виды города",
+			"category" : "views-MoscowSpb"
+		},
+		{
+			"name" : "Индивидуальные заказы",
+			"category" : "individual"
+		},
+		{
+			"name" : "Видео",
+			"category" : "video"
+		}
+	],
+
+	"works" : [
+		{
+			"name" : "Любовная история",
+			"img" : "work1.jpg",
+			"category" : "love-story"
+		},
+		{
+			"name" : "Любовная история",
+			"img" : "work2.jpg",
+			"category" : "love-story"
+		},
+		{
+			"name" : "Любовная история",
+			"img" : "work3.jpg",
+			"category" : "love-story"
+		},
+		{
+			"name" : "Любовная история",
+			"img" : "work4.jpg",
+			"category" : "love-story"
+		},
+		{
+			"name" : "Новый год",
+			"img" : "work5.jpg",
+			"category" : "new-year"
+		},
+		{
+			"name" : "Новый год",
+			"img" : "work6.jpg",
+			"category" : "new-year"
+		},
+		{
+			"name" : "Виды города",
+			"img" : "work6.jpg",
+			"category" : "views-MoscowSpb"
+		},
+		{
+			"name" : "Виды города",
+			"img" : "work7.jpg",
+			"category" : "views-MoscowSpb"
+		},
+		{
+			"name" : "Виды города",
+			"img" : "work8.jpg",
+			"category" : "views-MoscowSpb"
+		},
+		{
+			"name" : "Индивидуальные заказы",
+			"img" : "work1.jpg",
+			"category" : "individual"
+		},
+		{
+			"name" : "Индивидуальные заказы",
+			"img" : "work3.jpg",
+			"category" : "individual"
+		},
+		{
+			"name" : "Видео",
+			"img" : "work6.jpg",
+			"category" : "video"
+		}
+	]
+}

@@ -1,0 +1,8 @@
+mixin tarif()
+	section.tarif#tarif(ng-controller="tarifController")
+		.tarif__item(ng-repeat="item in tarif" class="tarif__item--{{item.bemClass}}")
+			.tarif__item__header(class="tarif__item__header--{{item.bemClass}}") {{item.name}}
+			.tarif__item__cost(class="tarif__item__cost--{{item.bemClass}}") {{item.cost}}
+			.tarif__item__row.tarif__item__row--f(class="tarif__item__row--{{item.bemClass}} first-child") {{item.row1}}
+			.tarif__item__row.tarif__item__row--l(class="tarif__item__row--{{item.bemClass}}") {{item.row2}}
+			a(href="#form" ng-click="goToForm(item.name)" du-smooth-scroll title="Заказжи сейчас по тарифу {{item.name}}" class="tarif__item__link--{{item.bemClass}}").tarif__item__link Заказать

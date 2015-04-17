@@ -1,0 +1,11 @@
+mixin howwework()
+	section.howwework#howwework(ng-controller="howweworkController")
+		header.howwework__header
+			.title(class="{{param.headerColor}}") {{param.headerName}}
+		.wrapper.wrapper--howwework
+			.howwework__item(ng-repeat="(i, item) in programs" class="howwework__item--{{item.bemClass}}")
+				.howwework__item__numb(class="howwework__item__numb--{{item.bemClass}}") {{i + 1}}
+				.howwework__item__img(class="howwework__item__img--{{item.bemClass}}")
+				.howwework__item__text {{item.name}}
+					a(href="#", title="Скачать бланк тз").howwework__item__link скачать бланк для клиента
+

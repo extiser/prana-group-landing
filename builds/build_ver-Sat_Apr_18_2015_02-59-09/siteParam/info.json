@@ -1,0 +1,24 @@
+{
+	"info" : [
+		{
+			"bemModifer" : "bigDisplay",
+			"text" : "Большой экран 2*3, больше сюжета"
+		},
+		{
+			"bemModifer" : "theOne",
+			"text" : "Мы первые привезли в Россию эту технологию"
+		},
+		{
+			"bemModifer" : "threeColors",
+			"text" : "Можно использовать 3 разных цвета"
+		},
+		{
+			"bemModifer" : "momentGlory",
+			"text" : "Мы показали на минуте славы"
+		},
+		{
+			"bemModifer" : "individualCreate",
+			"text" : "Создание индивидуальной программы"
+		}
+	]
+}

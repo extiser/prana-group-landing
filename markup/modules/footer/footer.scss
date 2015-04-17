@@ -1,0 +1,10 @@
+#toTop {
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	@include bg($toTop);
+	border-radius: 5px;
+	&:hover {
+		cursor: pointer;
+	}
+}

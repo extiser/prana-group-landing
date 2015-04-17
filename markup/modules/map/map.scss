@@ -1,0 +1,56 @@
+.map {
+	overflow: hidden;
+
+	width: 1260px;
+	margin: auto;
+	margin-top: 65px;
+	&__hide {
+		position: relative;
+
+		display: block;
+
+		padding: 19px 0;
+
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		color: #a5a5a5;
+		background: #e0e0e0;
+
+		font-family: "HelveticaNeueCyrLight";
+		font-size: 24px;
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 460px;
+
+			margin: auto;
+
+			content: "";
+
+			@include bg($open);
+		}
+		&.show {
+			&:before {
+				@include bg($hide);
+			}
+		}
+	}
+	&__code {
+		visibility: hidden;
+
+		height: 0;
+
+		transition: all .4s ease-in-out;
+
+		opacity: 0;
+		&.active {
+			visibility: visible;
+
+			height: 470px;
+
+			opacity: 1;
+		}
+	}
+}

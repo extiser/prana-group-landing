@@ -1,0 +1,12 @@
+mixin portfolio()
+	section.portfolio#portfolio(ng-controller="portfolioController")
+		header.portfolio__header
+			.title(class="{{param.headerColor}}") {{param.headerName}}
+
+		.portfolio__filter
+			a.portfolio__filter__item.active(ng-click="filterWorks('all')" id="all" href="#portfolio__works") Все
+			a.portfolio__filter__item(ng-repeat="item in filter" id="{{item.category}}" ng-click="filterWorks(item.category)") {{item.name}}
+
+		.portfolio__works(id="portfolio__works")
+			.portfolio__works__item.active(ng-repeat="work in works" data-work="{{work.category}}")
+				img(ng-src="%=staticPrefix=%images/content/{{work.img}}")

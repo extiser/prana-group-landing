@@ -1,0 +1,125 @@
+.info {
+	margin-bottom: 33px;
+	padding-bottom: 36px;
+
+	background-color: #fbfbfb;
+	&__item {
+		position: relative;
+
+		overflow: hidden;
+
+		width: 229px;
+		height: 150px;
+
+		&--bigDisplay {
+			background-color: $green;
+		}
+		&--theOne {
+			background-color: $yellow;
+		}
+		&--threeColors {
+			background-color: $red;
+		}
+		&--momentGlory {
+			background-color: $blue;
+		}
+		&--individualCreate {
+			background-color: $purple;
+		}
+		&__img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+
+			height: 101px;
+			margin: auto;
+
+			transform: scale(1) rotate(720deg);
+			transition: all 0.5s;
+
+			&--bigDisplay {
+				width: 111px;
+
+				background: url(../images/content/bigDisplay.png) no-repeat center center;
+			}
+			&--theOne {
+				width: 120px;
+
+				background: url(../images/content/theOne.png) no-repeat center center;
+			}
+			&--threeColors {
+				width: 108px;
+
+				background: url(../images/content/threeColors.png) no-repeat center center;
+			}
+			&--momentGlory {
+				width: 77px;
+
+				background: url(../images/content/momentGlory.png) no-repeat center center;
+			}
+			&--individualCreate {
+				width: 102px;
+
+				background: url(../images/content/individualCreate.png) no-repeat center center;
+			}
+		}
+		&__text {
+			position: absolute;
+			top: -50px;
+			right: 0;
+			left: 0;
+
+			visibility: hidden;
+
+			width: 85%;
+			margin: auto;
+
+			transition: all .4s ease-in-out;
+			text-align: center;
+
+			opacity: 0;
+			color: #fff;
+
+			font-family: "HelveticaNeueCyrBold";
+			font-size: 18px;
+			line-height: 24px;
+			&--individualCreate {
+				width: 100%;
+			}
+		}
+		&.animate {
+			.info__item__img {
+				top: -64px;
+
+				height: auto;
+
+				background-size: 100% auto;
+				transform: scale(1) rotate(0deg);
+				&--bigDisplay {
+					width: calc(111px / 3);
+				}
+				&--theOne {
+					width: calc(120px / 3);
+				}
+				&--threeColors {
+					width: calc(108px / 3);
+				}
+				&--momentGlory {
+					width: calc(77px / 3);
+				}
+				&--individualCreate {
+					width: calc(102px / 3);
+				}
+			}
+			.info__item__text {
+				top: 70px;
+
+				visibility: visible;
+
+				opacity: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"param" : {
+		"headerColor" : "red",
+		"headerName" : "Как мы работаем",
+		"headerText" : ""
+	},
+	"programs" : [
+		{
+			"bemClass" : "howFirst",
+			"name" : "Вы рассказываете о концепции мероприятия и мы начинаем планирование шоу-программы"
+		},
+		{
+			"bemClass" : "howSecond",
+			"name" : "Вы присылаете ТЗ"
+		},
+		{
+			"bemClass" : "howThird",
+			"name" : "Мы высылаем эскизы для согласования"
+		},
+		{
+			"bemClass" : "howFourth",
+			"name" : "Выезжаем на место и проводим представление"
+		}
+	]
+}

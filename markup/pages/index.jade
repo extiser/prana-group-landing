@@ -1,0 +1,45 @@
+doctype html
+|<!--[if IE 7]><html class="ie7 lt-ie10 lt-ie9 lt-ie8 no-js" lang="ru"><![endif]-->
+|<!--[if IE 8]><html class="ie8 lt-ie10 lt-ie9 no-js" lang="ru"><![endif]-->
+|<!--[if IE 9 ]><html class="ie9 lt-ie10 no-js" lang="ru"><![endif]-->
+|<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="ru"><!--<![endif]-->
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/footer/footer
+include ../modules/slider/slider
+include ../modules/info/info
+include ../modules/programs/programs
+include ../modules/howwework/howwework
+include ../modules/portfolio/portfolio
+include ../modules/tarif/tarif
+include ../modules/reviews/reviews
+include ../modules/form/form
+include ../modules/map/map
+
+head
+	+head(head.defaults)
+
+body
+	+header()
+
+	+slider()
+
+	+info()
+
+	.wrapper
+		+programs()
+
+	+howwework()
+
+	+portfolio()
+
+	+tarif()
+
+	+reviews()
+
+	+form()
+
+	+map()
+
+	+footer()

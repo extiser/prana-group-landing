@@ -1,0 +1,36 @@
+mixin form()
+	section.form#form(ng-controller="formController")
+		header.form__header
+			.title(class="{{param.headerColor}}") {{param.headerName}}
+
+		.send-form.send-form--ok#send-form-ok
+			span.close
+			p.green {{param.formSuccess}}
+
+		.send-form.send-form--err#send-form-err
+			span.close
+			p.red {{param.formError}}
+
+	form(id="toOrder" name="form" ng-submit="submit()" class="active" ng-controller="formSendController")
+		input(type="hidden" name="setwork" ng-model="user.setwork" id="setwork" value="Ничего не выбрано")
+		input(
+			type="text"
+			name="name"
+			required
+			ng-model="user.name"
+			placeholder="Ваше имя..."
+			).form__element.form__element--name
+		input(
+			type="text"
+			name="tel"
+			required
+			ng-model="user.tel"
+			ui-mask="+7 (999) 999-99-99"
+			).form__element.form__element--tel
+		textarea(
+			name="text"
+			ng-model="user.text"
+			placeholder="Комментарий к заказу..."
+			).form__element.form__element--text
+
+		input(type="submit" value="Отправить заказ").form__submit

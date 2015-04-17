@@ -1,0 +1,43 @@
+.portfolio {
+	&__header {
+		padding-top: 44px;
+		padding-bottom: 15px;
+	}
+	&__filter {
+		display: flex;
+
+		margin-bottom: 45px;
+
+		text-align: center;
+
+		align-items: center;
+		justify-content: center;
+		&__item {
+			padding: 8px 13px;
+
+			color: $textGray;
+			border: 1px solid transperent;
+
+			font-family: "SegoeUILight";
+			font-size: 14px;
+			&.active {
+				border: 1px solid #391d46;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	&__works {
+		display: flex;
+
+		min-height: 215px;
+
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: left;
+		&__item {
+			font-size: 0;
+		}
+	}
+}

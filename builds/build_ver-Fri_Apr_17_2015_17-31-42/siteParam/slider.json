@@ -1,0 +1,39 @@
+{
+	"params" : {
+		"duration" : "flow",
+		"speed" : "700",
+		"timeout" : "3000",
+		"controls" : "true"
+	},
+
+	"slides" : [
+		{
+			"name" : "Световые картины",
+			"contentRowF" : "Будь оригинальным",
+			"contentRowL" : "закажи самую необычную картину",
+			"image" : "slide__item1.jpg",
+			"description" : ""
+		},
+		{
+			"name" : "Любовная история",
+			"contentRowF" : "Будь крутым перцем",
+			"contentRowL" : "закажи самую необычную картину",
+			"image" : "slide__item1.jpg",
+			"description" : ""
+		},
+		{
+			"name" : "Новый год",
+			"contentRowF" : "Будь суперменом",
+			"contentRowL" : "закажи самую необычную картину",
+			"image" : "slide__item1.jpg",
+			"description" : ""
+		},
+		{
+			"name" : "Виды городов",
+			"contentRowF" : "Будь или не будь",
+			"contentRowL" : "закажи самую необычную картину",
+			"image" : "slide__item1.jpg",
+			"description" : ""
+		}
+	]
+}
